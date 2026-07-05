@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout | SmartServe AI</title>
+  <link rel="stylesheet" href="styles.css?v=6">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="smartserve-logo-mark.png" alt="SmartServe AI logo" width="54" height="54" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';"><span class="brand-fallback" aria-hidden="true">SS</span>
+        <span><strong>SmartServe AI</strong><small>Scan, Order, Enjoy.</small></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="cart.html">Cart <span class="cart-count">0</span></a>
+        <a href="checkout.html" class="active">Checkout</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero checkout-hero">
+      <div class="reveal">
+        <p class="eyebrow">Final step</p>
+        <h1>Checkout</h1>
+        <p>Enter customer and table details to place the order.</p>
+      </div>
+    </section>
+
+    <section class="checkout-layout reveal">
+      <form class="checkout-form" id="checkoutForm">
+        <label>
+          Customer Name
+          <input type="text" id="customerName" placeholder="Enter your name" required>
+        </label>
+        <label>
+          Mobile Number
+          <input type="tel" id="mobileNumber" placeholder="Enter mobile number" pattern="[0-9]{10}" required>
+        </label>
+        <label>
+          Table Number
+          <input type="number" id="tableNumber" placeholder="Example: 5" min="1" required>
+        </label>
+        <label>
+          Special Instructions
+          <textarea id="instructions" rows="5" placeholder="Less spicy, no onion, extra cheese..."></textarea>
+        </label>
+        <button class="btn btn-primary full-width" type="submit">Place Order</button>
+      </form>
+
+      <aside class="cart-summary">
+        <h2>Order Preview</h2>
+        <div id="checkoutItems" class="checkout-items"></div>
+        <div class="summary-total"><span>Total</span><strong id="checkoutTotal">&#8377;0</strong></div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 SmartServe AI. Thank you for dining with us.</p>
+    <p class="made-by">Made by Shubh M Patel</p>
+  </footer>
+  <script src='https://www.noupe.com/embed/019ef461b34f7bf7b452b5f0d9bd77dab9a7.js'></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart | SmartServe AI</title>
+  <link rel="stylesheet" href="styles.css?v=6">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="smartserve-logo-mark.png" alt="SmartServe AI logo" width="54" height="54" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';"><span class="brand-fallback" aria-hidden="true">SS</span>
+        <span><strong>SmartServe AI</strong><small>Scan, Order, Enjoy.</small></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="cart.html" class="active">Cart <span class="cart-count">0</span></a>
+        <a href="checkout.html">Checkout</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero cart-hero">
+      <div class="reveal">
+        <p class="eyebrow">Your order</p>
+        <h1>Cart</h1>
+        <p>Review selected dishes before checkout.</p>
+      </div>
+    </section>
+
+    <section class="cart-layout reveal">
+      <div class="cart-list" id="cartItems"></div>
+      <aside class="cart-summary">
+        <h2>Bill Summary</h2>
+        <div class="summary-row"><span>Subtotal</span><strong id="subtotal">&#8377;0</strong></div>
+        <div class="summary-row"><span>Service</span><strong>Free</strong></div>
+        <div class="summary-total"><span>Total</span><strong id="cartTotal">&#8377;0</strong></div>
+        <a class="btn btn-primary full-width" href="checkout.html">Proceed to Checkout</a>
+        <a class="btn btn-outline full-width" href="menu.html">Add More Items</a>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 SmartServe AI. Simple table ordering.</p>
+    <p class="made-by">Made by Shubh M Patel</p>
+  </footer>
+  <script src='https://www.noupe.com/embed/019ef461b34f7bf7b452b5f0d9bd77dab9a7.js'></script>
+  <script src="script.js"></script>
+</body>
+</html>

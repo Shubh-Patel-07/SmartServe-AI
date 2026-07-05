@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu | SmartServe AI</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="styles.css?v=6">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="smartserve-logo-mark.png" alt="SmartServe AI logo" width="54" height="54" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';"><span class="brand-fallback" aria-hidden="true">SS</span>
+        <span><strong>SmartServe AI</strong><small>Scan, Order, Enjoy.</small></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="menu.html" class="active">Menu</a>
+        <a href="cart.html">Cart <span class="cart-count">0</span></a>
+        <a href="checkout.html">Checkout</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero menu-hero">
+      <div class="reveal">
+        <p class="eyebrow">Digital menu</p>
+        <h1>Explore our dishes</h1>
+        <p>Search, filter, and add your favorites to the cart.</p>
+      </div>
+    </section>
+
+    <section class="menu-tools reveal">
+      <label class="search-box">
+        <span>Search</span>
+        <input id="searchInput" type="search" placeholder="Search pizza, burger, thali...">
+      </label>
+      <div class="category-filters" id="categoryFilters">
+        <button class="filter-btn active" data-category="All">All</button>
+        <button class="filter-btn" data-category="Pizza">Pizza</button>
+        <button class="filter-btn" data-category="Burger">Burger</button>
+        <button class="filter-btn" data-category="Gujarati Food">Gujarati Food</button>
+        <button class="filter-btn" data-category="Drinks">Drinks</button>
+        <button class="filter-btn" data-category="Desserts">Desserts</button>
+      </div>
+    </section>
+
+    <section class="section menu-section">
+      <div id="menuGrid" class="menu-grid"></div>
+      <p id="emptyMenu" class="empty-state">No dishes found. Try another search or category.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 SmartServe AI. Fresh food with smart ordering.</p>
+    <p class="made-by">Made by Shubh M Patel</p>
+  </footer>
+  <script src='https://www.noupe.com/embed/019ef461b34f7bf7b452b5f0d9bd77dab9a7.js'></script>
+  <script src="script.js"></script>
+</body>
+</html>
